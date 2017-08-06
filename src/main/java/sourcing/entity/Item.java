@@ -1,6 +1,6 @@
 package sourcing.entity;
 
-        import javax.persistence.*;
+import javax.persistence.*;
 import java.io.Serializable;
 @Entity
 @Table(name="items")
