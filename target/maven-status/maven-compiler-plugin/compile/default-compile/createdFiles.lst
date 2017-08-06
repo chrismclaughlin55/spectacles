@@ -1,2 +1,14 @@
-config/HelloController.class
+sourcing/client/ws/AuthTokenWS$AuthTokenWSBuilder.class
+sourcing/client/ws/AuthTokenWS.class
+sourcing/client/ws/PriceWS.class
+sourcing/client/EbayBuyAPIClient.class
+sourcing/client/ws/SearchResultWS$SearchResultWSBuilder.class
+sourcing/client/EbayAuthenticationClientImpl.class
+sourcing/client/EbayAuthenticationClient.class
+sourcing/client/ws/ItemWS$ItemWSBuilder.class
+sourcing/client/ws/PriceWS$PriceWSBuilder.class
 config/Application.class
+sourcing/client/ws/ItemWS.class
+sourcing/client/EbayBuyAPIClientImpl.class
+config/HelloController.class
+sourcing/client/ws/SearchResultWS.class
