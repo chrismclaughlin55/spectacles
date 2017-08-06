@@ -1,6 +1,7 @@
-package sourcing.client;
+package client;
 
-import sourcing.client.ws.ItemWS;
+
+import client.ws.ItemWS;
 
 import java.util.List;
 

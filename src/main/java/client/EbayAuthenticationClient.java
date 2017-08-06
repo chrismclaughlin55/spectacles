@@ -1,4 +1,4 @@
-package sourcing.client;
+package client;
 
 public interface EbayAuthenticationClient {
 

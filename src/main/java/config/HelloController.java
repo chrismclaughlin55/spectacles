@@ -1,11 +1,10 @@
 package config;
 
+import client.EbayAuthenticationClient;
+import client.EbayBuyAPIClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
-import sourcing.client.EbayAuthenticationClient;
-import sourcing.client.EbayBuyAPIClient;
-import sourcing.client.EbayBuyAPIClientImpl;
 
 @RestController
 public class HelloController {

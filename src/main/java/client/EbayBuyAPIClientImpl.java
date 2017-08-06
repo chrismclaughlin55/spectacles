@@ -1,15 +1,14 @@
-package sourcing.client;
+package client;
 
+import client.ws.ItemWS;
+import client.ws.SearchResultWS;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
-import sourcing.client.ws.ItemWS;
-import sourcing.client.ws.SearchResultWS;
 
 import java.util.List;
 

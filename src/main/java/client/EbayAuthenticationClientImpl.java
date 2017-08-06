@@ -1,5 +1,6 @@
-package sourcing.client;
+package client;
 
+import client.ws.AuthTokenWS;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
@@ -7,7 +8,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.LinkedMultiValueMap;
 import org.springframework.util.MultiValueMap;
 import org.springframework.web.client.RestTemplate;
-import sourcing.client.ws.AuthTokenWS;
 
 import java.util.Base64;
 

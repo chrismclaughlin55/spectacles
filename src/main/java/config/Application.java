@@ -13,8 +13,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EnableAutoConfiguration
-@ComponentScan("sourcing.client")
-@ComponentScan("config")
+@ComponentScan("java")
 public class Application {
 
     public static void main(String[] args) {
