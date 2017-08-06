@@ -1,2 +1,7 @@
+<<<<<<< HEAD
 /Users/chrismclaughlin/IdeaProjects/hello/src/main/java/hello/Application.java
 /Users/chrismclaughlin/IdeaProjects/hello/src/main/java/hello/HelloController.java
+=======
+/Users/chrismclaughlin/IdeaProjects/spectacle/src/main/java/Application.java
+/Users/chrismclaughlin/IdeaProjects/spectacle/src/main/java/HelloController.java
+>>>>>>> new
