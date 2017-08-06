@@ -1,4 +1,4 @@
-package sourcing.client.entity;
+package sourcing.entity;
 
         import javax.persistence.*;
 import java.io.Serializable;

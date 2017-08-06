@@ -1,5 +1,5 @@
-package sourcing.client.dao;
-import  sourcing.client.entity.Item;
+package sourcing.dao;
+import sourcing.entity.Item;
 import java.util.List;
 public interface ItemDAO {
 

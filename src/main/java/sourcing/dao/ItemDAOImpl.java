@@ -1,4 +1,4 @@
-package sourcing.client.dao;
+package sourcing.dao;
 
 public class ItemDAOImpl {
 }
