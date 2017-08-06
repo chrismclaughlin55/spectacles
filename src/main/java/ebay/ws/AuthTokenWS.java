@@ -1,4 +1,4 @@
-package client.ws;
+package ebay.ws;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
