@@ -1,22 +1,24 @@
-package client.ws;
+package ebay.vo;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.math.BigDecimal;
+
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-@JsonIgnoreProperties(ignoreUnknown = true)
-public class ItemWS {
+public class ItemBean {
     private String itemId;
     private String title;
-    private PriceWS price;
+    private BigDecimal price;
+    private String priceCurrency;
     private String condition;
     private long conditionId;
-    private PriceWS currentBidPrice;
+    private BigDecimal currentBidPrice;
+    private String currentBidCurrency;
     private String itemWebUrl;
 }

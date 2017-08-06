@@ -1,17 +1,17 @@
 package config;
 
-import client.EbayAuthenticationClient;
-import client.EbayBuyAPIClient;
+import ebay.service.EbayAuthenticationService;
+import ebay.service.EbayBuyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class HelloController {
     @Autowired
-    private EbayAuthenticationClient ebayAuthenticationClient;
+    private EbayAuthenticationService ebayAuthenticationService;
     @Autowired
-    private EbayBuyAPIClient ebayBuyAPIClient;
+    private EbayBuyService ebayBuyService;
 
     @RequestMapping("/")
     public String index() {
@@ -20,11 +20,11 @@ public class HelloController {
 
     @RequestMapping("/test/auth")
     public String testAuth() {
-        return ebayAuthenticationClient.getAppAuthenticationToken();
+        return ebayAuthenticationService.getAppAuthenticationToken();
     }
 
     @RequestMapping("/test/search")
     public String testSearch() {
-       return ebayBuyAPIClient.search("iphone6", 3).toString();
+       return ebayBuyService.search("iphone6", 3).toString();
     }
 }
