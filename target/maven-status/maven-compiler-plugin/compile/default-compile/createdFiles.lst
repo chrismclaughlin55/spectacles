@@ -1,9 +1,0 @@
-sourcing/client/dao/ItemDAOImpl.class
-config/HibernateConfig.class
-sourcing/client/ItemWS.class
-sourcing/client/EbayBuyAPIClient.class
-sourcing/client/EbayBuyAPIClientImpl.class
-config/HelloController.class
-sourcing/client/dao/ItemDAO.class
-sourcing/client/entity/Item.class
-config/Application.class
