@@ -3,8 +3,7 @@ package config;
 import ebay.service.EbayAuthenticationService;
 import ebay.service.EbayBuyService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import sourcing.service.ItemService;
 import sourcing.vo.ItemBean;
 
@@ -33,11 +32,17 @@ public class HelloController {
     }
 
     @RequestMapping("/test/itemService/create")
-    public long testServ(){
+    public long testCreate(){
         ItemBean itemBean = new ItemBean();
         itemBean.setCategory("poop");
         itemBean.setEbayId("123");
 
         return itemService.createItem(itemBean);
+    }
+
+    @RequestMapping( method=RequestMethod.DELETE, value="/test/itemService/delete/{id}")
+    public String testDelete(@PathVariable long id){
+        itemService.deleteItem(id);
+        return "Success!\n";
     }
 }

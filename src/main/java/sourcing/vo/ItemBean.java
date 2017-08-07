@@ -11,7 +11,7 @@ import lombok.NoArgsConstructor;
 @Builder
 public class ItemBean {
     private static final long serialVersionUID = 1L;
-    private int id;
+    private long id;
     private String ebayId;
     private String category;
 }

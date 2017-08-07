@@ -17,6 +17,13 @@ public class ItemServiceImpl implements ItemService {
         return itemRepository.save(item).getId();
     }
 
+    @Override
+    public void deleteItem(long itemId) {
+        Item i = new Item();
+
+         itemRepository.delete(itemId);
+    }
+
     private Item map(ItemBean itemBean){
         return Item.builder()
                 .category(itemBean.getCategory())

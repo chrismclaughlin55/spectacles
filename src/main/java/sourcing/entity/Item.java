@@ -7,6 +7,7 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Data
@@ -16,13 +17,20 @@ import java.io.Serializable;
 @Table(name="items")
 public class Item implements Serializable {
     private static final long serialVersionUID = 1L;
+
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     @Column(name="id")
-    private int id;
+    private long id;
+
     @Column(name="ebay_id")
     private String ebayId;
+
     @Column(name="category")
     private String category;
+
+    @JoinColumn
+    @OneToMany(cascade={CascadeType.ALL})
+    private List<MarketplaceInfo> marketplaceInfos;
 
 }

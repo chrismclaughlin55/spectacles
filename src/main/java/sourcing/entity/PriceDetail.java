@@ -1,18 +1,18 @@
 package sourcing.entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.List;
 
 @Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="marketplace_info")
-public class MarketplaceInfo implements Serializable {
+@Table(name="price_details")
+public class PriceDetail implements Serializable {
     private static final long serialVersionUID = 1L;
 
     @Id
@@ -20,16 +20,13 @@ public class MarketplaceInfo implements Serializable {
     @Column(name = "id")
     private long id;
 
+    @Column(name = "price")
+    private long price;
+
+    @Column(name = "condition")
+    private String condition;
 
     @ManyToOne(optional = false, fetch= FetchType.LAZY)
     @JoinColumn
-    private Item item;
-
-    @Column(name = "source")
-    private String source;
-
-    @JoinColumn
-    @OneToMany(cascade={CascadeType.ALL})
-    private List<PriceDetail> priceDetails;
-
+    private MarketplaceInfo marketplaceInfo;
 }
