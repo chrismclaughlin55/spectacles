@@ -15,7 +15,7 @@ public class HelloController {
     @Autowired
     private EbayBuyService ebayBuyService;
     @Autowired
-    private ItemService itemService
+    private ItemService itemService;
 
     @RequestMapping("/")
     public String index() {
@@ -33,15 +33,11 @@ public class HelloController {
     }
 
     @RequestMapping("/test/itemService/create")
-    public String testServ(){
+    public long testServ(){
         ItemBean itemBean = new ItemBean();
         itemBean.setCategory("poop");
         itemBean.setEbayId("123");
 
-        return itemService.createItem(itemBean).toString();
-    }
-    @RequestMapping("/test/itemService/create")
-    public String testDelete(){
-        return "test";
+        return itemService.createItem(itemBean);
     }
 }

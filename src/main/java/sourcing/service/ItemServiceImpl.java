@@ -1,13 +1,16 @@
 package sourcing.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 import sourcing.entity.Item;
 import sourcing.repository.ItemRepository;
 import sourcing.vo.ItemBean;
 
+@Component
 public class ItemServiceImpl implements ItemService {
     @Autowired
     private ItemRepository itemRepository;
+
     @Override
     public long createItem(ItemBean itemBean) {
         Item item = map(itemBean);
@@ -19,7 +22,5 @@ public class ItemServiceImpl implements ItemService {
                 .category(itemBean.getCategory())
                 .ebayId(itemBean.getEbayId())
                 .build();
-
-
     }
 }
