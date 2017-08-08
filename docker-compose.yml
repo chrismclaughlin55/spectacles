@@ -1,0 +1,19 @@
+version: '3'
+services:
+  spectacle:
+    build: .
+    ports:
+     - "8000:8000"
+    links:
+     - mysqldb
+    depends_on:
+     - mysqldb
+  mysqldb:
+    image: mysql:5.6.26
+    environment:
+     - MYSQL_ROOT_PASSWORD=test
+     - MYSQL_DATABASE=arbitrage
+     - DATABASE_USER=dbuser
+     - DATABASE_PASSWORD=dbp4ss
+    ports:
+      - "3306:3306"
