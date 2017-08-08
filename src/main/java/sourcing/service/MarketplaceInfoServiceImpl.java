@@ -1,11 +1,11 @@
 package sourcing.service;
 
-import sourcing.vo.marketplaceInfoBean;
+import sourcing.vo.MarketplaceInfoBean;
 
 public class MarketplaceInfoServiceImpl implements MarketplaceInfoService {
 
     @Override
-    public long createMarketplaceInfo(marketplaceInfoBean itemBean) {
+    public long createMarketplaceInfo(MarketplaceInfoBean itemBean) {
         return 0;
     }
 
