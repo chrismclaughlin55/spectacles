@@ -1,4 +1,5 @@
 package sourcing.entity;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -28,7 +29,6 @@ public class MarketplaceInfo implements Serializable {
     @Column(name = "source")
     private String source;
 
-    @JoinColumn
     @OneToMany(cascade={CascadeType.ALL})
     private List<PriceDetail> priceDetails;
 

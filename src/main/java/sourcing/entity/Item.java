@@ -29,7 +29,6 @@ public class Item implements Serializable {
     @Column(name="category")
     private String category;
 
-    @JoinColumn
     @OneToMany(cascade={CascadeType.ALL})
     private List<MarketplaceInfo> marketplaceInfos;
 

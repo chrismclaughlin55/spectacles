@@ -1,6 +1,7 @@
 package sourcing.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -11,6 +12,7 @@ import java.io.Serializable;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Table(name="price_details")
 public class PriceDetail implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -23,10 +25,10 @@ public class PriceDetail implements Serializable {
     @Column(name = "price")
     private long price;
 
-    @Column(name = "condition")
-    private String condition;
+    @Column(name = "item_condition")
+    private String itemCondition;
 
-    @ManyToOne(optional = false, fetch= FetchType.LAZY)
+    @ManyToOne(optional = false, fetch=FetchType.LAZY)
     @JoinColumn
     private MarketplaceInfo marketplaceInfo;
 }
