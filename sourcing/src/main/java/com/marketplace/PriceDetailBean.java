@@ -1,4 +1,4 @@
-package com.vo;
+package com.marketplace;
 
 public class PriceDetailBean {
     private static final long serialVersionUID = 1L;

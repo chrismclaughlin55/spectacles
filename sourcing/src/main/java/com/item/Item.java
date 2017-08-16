@@ -1,5 +1,6 @@
-package com.entity;
+package com.item;
 
+import com.marketplace.MarketplaceInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

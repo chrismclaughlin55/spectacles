@@ -1,6 +1,4 @@
-package com.service;
-
-import com.vo.MarketplaceInfoBean;
+package com.marketplace;
 
 public class MarketplaceInfoServiceImpl implements MarketplaceInfoService {
 

@@ -1,6 +1,4 @@
-package com.service;
-
-import com.vo.ItemBean;
+package com.item;
 
 public interface ItemService {
     long createItem(ItemBean itemBean);

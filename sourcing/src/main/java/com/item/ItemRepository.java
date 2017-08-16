@@ -1,6 +1,5 @@
-package com.repository;
+package com.item;
 
-import com.entity.Item;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 

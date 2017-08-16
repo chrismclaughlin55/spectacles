@@ -1,8 +1,5 @@
-package com.service;
+package com.item;
 
-import com.entity.Item;
-import com.repository.ItemRepository;
-import com.vo.ItemBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 

@@ -1,4 +1,4 @@
-package com.entity;
+package com.marketplace;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
