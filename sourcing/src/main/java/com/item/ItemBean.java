@@ -1,9 +1,12 @@
 package com.item;
 
+import com.marketplace.MarketplaceInfoBean;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import java.util.List;
 
 @Data
 @NoArgsConstructor
@@ -14,4 +17,5 @@ public class ItemBean {
     private long id;
     private String ebayId;
     private String category;
+    List<MarketplaceInfoBean> marketplaceInfo;
 }
